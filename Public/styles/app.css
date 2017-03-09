@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	font-family: sans-serif;
+  background-color: #54adf9;
+	position: relative;
+  padding-top: 2.5%;
+}
+
+.message h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 64px;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 24px;
+    color: #444;
+}
+
+.message h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 64px;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 18px;
+    color: #444;
+}
+
+.clear-day {
+    background-image: url('../images/clear-day.png');
+    margin: 0 auto;
+    height: 128px;
+    width: 128px;
+
+}
+
+.clear-night {
+    background-image: url('../images/clear-night.png');
+    margin: 0 auto;
+    height: 128px;
+    width: 128px;
+
+}
+
+.rain {
+    background-image: url('../images/rain.png');
+    margin: 0 auto;
+    height: 128px;
+    width: 128px;
+
+}
+
+.snow {
+    background-image: url('../images/snow.png');
+    margin: 0 auto;
+    height: 128px;
+    width: 128px;
+
+}
+
+.sleet {
+    background-image: url('../images/sleet.png');
+    margin: 0 auto;
+    height: 128px;
+    width: 128px;
+
+}
+
+.wind {
+    background-image: url('../images/wind.png');
+    margin: 0 auto;
+    height: 128px;
+    width: 128px;
+
+}
+
+.fog {
+    background-image: url('../images/fog.png');
+    margin: 0 auto;
+    height: 128px;
+    width: 128px;
+
+}
+
+.cloudy {
+    background-image: url('../images/cloudy.png');
+    margin: 0 auto;
+    height: 128px;
+    width: 128px;
+
+}
+
+.partly-cloudy-day {
+    background-image: url('../images/partly-cloudy-day.png');
+    margin: 0 auto;
+    height: 128px;
+    width: 128px;
+
+}
+
+.partly-cloudy-night {
+    background-image: url('../images/partly-cloudy-night.png');
+    margin: 0 auto;
+    height: 128px;
+    width: 128px;
+
+}
+iframe {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    filter: drop-shadow(0 0 70px #fff);
+    animation: trikyas 40s ease-in-out infinite alternate;
+}
+@keyframes trikyas{
+    10% {filter: drop-shadow(0 0 100px #fff);}
+    20% {filter: drop-shadow(0 0 75px #99d);}
+    30% {filter: drop-shadow(0 0 50px #b55);}
+    40% {filter: drop-shadow(0 0 75px #dad);}
+    50% {filter: drop-shadow(0 0 100px #00a);}
+    60% {filter: drop-shadow(0 0 75px #0dd);}
+    70% {filter: drop-shadow(0 0 50px #500);}
+    80% {filter: drop-shadow(0 0 75px #b09);}
+    90% {filter: drop-shadow(0 0 100px #fff);}
+}
+.map {
+    width: 100%;
+    height: 50vh;
+    margin: 25px 0 0;
+    border: 0;
+}

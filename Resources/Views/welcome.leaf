@@ -1,0 +1,26 @@
+#extend("base")
+
+#export("head") {
+	<title>My App | trikyas</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,300" rel="stylesheet">
+	  <link rel="stylesheet" href="/styles/app.css">
+
+}
+
+#export("body") {
+    <div class="message">
+      <div class="#(icon)"></div>
+      <h1>It is #(time)</h1>
+<h2>Currently: #(temp)&deg;F, #(current-summary). #(hourly-summary)</h2>
+
+    </div>
+
+
+    <iframe class="map" src='https://maps.darksky.net/@temperature,-31.952,152.441,11?embed=true&timeControl=true&fieldControl=true&defaultField=temperature&defaultUnits=_c'>
+    </iframe>
+
+
+
+
+}
